@@ -58,6 +58,6 @@ jobs:
 
       # 6. Deploy to GitHub Packages
       - name: Deploy to GitHub Packages
-        run: mvn deploy -s $HOME/.m2/settings.xml --batch-mode --update-snapshots
+        run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml -X
         env:
           GITHUB_TOKEN: ${{ github.token }}
