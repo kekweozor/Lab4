@@ -18,13 +18,13 @@ public class AddressBookIntegrationTest {
     private int port;
 
     @Autowired
-    private TestRestTemplate restTemplate;
+    private TestRestTemplate testRestTemplate;
 
     @Test
     void getAddressBooks_shouldReturnOk() {
         String url = "http://localhost:" + port + "/addressbooks";
 
-        ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+        ResponseEntity<String> response = testRestTemplate.getForEntity(url, String.class);
 
         assertThat(response.getStatusCodeValue()).isEqualTo(200);
         assertThat(response.getBody()).contains("addressbook"); // adjust to your expected content
