@@ -4,6 +4,9 @@
 name: Maven Build & Publish
 
 on:
+  push: 
+    branches:
+      - main
   release:
     types: [created]
 
