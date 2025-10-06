@@ -62,14 +62,6 @@
             <scope>test</scope>
         </dependency>
 
-        <distributionManagement>
-            <repository>
-                <id>github</id> <!-- This must match server-id in your workflow/settings.xml -->
-                <name>GitHub Packages</name>
-                <url>https://maven.pkg.github.com/kekweozor/Lab4</url>
-            </repository>
-        </distributionManagement>
-
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -101,5 +93,13 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id> <!-- This must match server-id in your workflow/settings.xml -->
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/kekweozor/Lab4</url>
+        </repository>
+    </distributionManagement>
 
 </project>
