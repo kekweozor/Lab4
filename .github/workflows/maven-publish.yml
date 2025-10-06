@@ -37,8 +37,8 @@ jobs:
                   <servers>
                     <server>
                       <id>github</id>
-                      <username>${GITHUB_ACTOR}</username>
-                      <password>${GITHUB_TOKEN}</password>
+                      <username>kekweozor</username>
+                      <password>${{ secrets.GITHUB_TOKEN }}</password>
                     </server>
                   </servers>
                 </settings>' > $HOME/.m2/settings.xml
