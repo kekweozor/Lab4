@@ -99,6 +99,7 @@
             <id>github</id> <!-- must match your settings.xml or GitHub Actions config -->
             <name>GitHub Packages - kekweozor</name>
             <url>https://maven.pkg.github.com/kekweozor/Lab4</url>
+            <layout>default</layout>
         </repository>
     </distributionManagement>
 
